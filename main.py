@@ -1,5 +1,6 @@
 # fast API app
-from fastapi import FastAPI, CORSMiddleware
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from .database import Base, engine
 from .routes import auth, chat, ticket
 
